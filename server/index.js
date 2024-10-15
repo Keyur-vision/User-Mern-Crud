@@ -1,12 +1,12 @@
 require("./config/dbConnect.js");
 const express = require("express");
 const app = express();
-const PORT = 8080;
 const router = require("./routes/index.js");
 const errorHandler = require("./errorHandling/errorMiddleware.js");
 const limiter = require("./middleware/rateLimiter.js")
 var cors = require('cors')
 require('dotenv').config()
+const PORT = process.env.PORT || 7070;
 
 app.use(cors());
 app.use(errorHandler);
