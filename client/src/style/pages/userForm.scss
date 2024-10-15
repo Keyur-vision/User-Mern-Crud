@@ -1,0 +1,84 @@
+@import "../utils/colors.scss";
+@import "../utils/variable";
+@import "../utils/colors";
+
+.form-hieght {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    padding: 1.5rem 3rem 3rem 3rem;
+}
+
+.profile-img {
+    padding-top: 2.5rem;
+}
+
+.edit-heading {
+    text-align: center;
+    padding: 20px 0;
+    text-transform: uppercase;
+    color: $green-color ;
+    font-size: 21px;
+}
+
+.form-center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    align-items: center;
+
+    .user-edit-btn {
+        background-color: $green-color;
+        padding: 12px 40px;
+        border: none;
+        color: #fff;
+        border-radius: 4px;
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (min-width: 0px) and (max-width: $breakpoint-small) {
+    .userFrom {
+        .row .col {
+            width: 100%;
+        }
+    }
+
+    .form-hieght {
+        width: 100%;
+    }
+
+}
+
+// Medium devices
+@media screen and (min-width: $breakpoint-small) and (max-width: $breakpoint-medium) {
+    .userFrom {
+        .row .col {
+            width: 100%;
+        }
+    }
+
+    .form-hieght {
+        width: 100%;
+    }
+
+}
+
+// Large devices
+@media screen and (min-width: $breakpoint-medium) and (max-width: $breakpoint-large) {
+
+    .form-hieght {
+        width: 100%;
+    }
+
+}
+
+// Extra large devices
+@media screen and (min-width: $breakpoint-large) and (max-width: $breakpoint-xlarge) {
+    .form-hieght {
+        width: 70%;
+    }
+}

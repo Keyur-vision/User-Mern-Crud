@@ -1,0 +1,52 @@
+@import "../utils/colors.scss";
+
+
+.header {
+    margin-bottom: 4rem;
+
+.header-text {
+    background-color: $green-color;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+}
+
+.header-menu {
+    ul {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+    :first-child {
+            padding-right: 0;
+        }
+
+        li {
+            padding: 0 2rem;
+            list-style: none;
+            list-style-type: none;
+              
+            a {
+                text-decoration: none;
+                color: #000;
+                font-weight: 500;
+            }
+        }
+        .logout-btn 
+       { 
+           background-color: #fe4040;
+           padding: 0.5rem 1rem;      
+
+           a{
+            color: #fff;
+            font-size: 14px;
+           }
+    }
+    }
+}
+
+}

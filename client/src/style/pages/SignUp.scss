@@ -1,0 +1,254 @@
+@import "../utils/variable";
+@import "../utils/colors";
+
+.signup {
+    // height: 100vh;
+    display: flex;
+    align-items: center;
+
+    .row {
+        .col {
+            width: 50%;
+            align-items: center;
+            // display: flex;
+        }
+
+        .form-email-col {
+            width: 70%
+        }
+
+        .form-age-col {
+            width: 30%
+        }
+    }
+
+    .profile-img {
+        cursor: pointer;
+    }
+
+    .signUp-mobile {
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    }
+
+    h2 {
+        color: $green-color;
+        font-size: 40px;
+        font-weight: 700;
+        padding-bottom: 20px;
+    }
+
+    .signup-data {
+        background-color: #fff;
+        padding: 3.12rem 0;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+
+        .col-one {
+            border-right: 1px solid;
+        }
+
+        .h-100 {
+            padding: 0 2rem;
+        }
+    }
+
+    .signup-heading {
+        padding: 0 3rem;
+    }
+
+    .signup-col-two {
+        padding: 3rem;
+    }
+
+    .signup-btn {
+        padding: 10px 0;
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border-radius: 7px;
+            margin-top: 4px;
+            border: 1px solid;
+            background-color: $green-color;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+    .auth-navigate-btn {
+        padding: 10px 0;
+
+        a {
+            color: $green-color;
+            padding-left: 10px;
+        }
+    }
+
+    .signup-remember-btn {
+        padding-left: 10px;
+    }
+}
+
+
+.user-profile {
+    cursor: pointer;
+
+    input {
+        visibility: hidden;
+    }
+
+    .profile-img {
+        width: 5rem;
+    }
+
+    .main-profile {
+        font-size: 20px;
+
+        label {
+            padding-left: 20px;
+        }
+    }
+
+
+}
+
+.profile-img {
+    padding: 10px 20px 5px 20px;
+
+    label {
+        padding-right: 20px;
+    }
+}
+
+input[type=checkbox] {
+    line-height: normal;
+    width: 17px;
+    height: 17px;
+}
+
+
+// @media screen and (min-width: 768px) and (max-width: 1024px) {
+//     .signup .row .col {
+//       width: 100%;
+//     }
+//  }
+
+@media screen and (min-width: 0px) and (max-width: $breakpoint-small) {
+    .signup {
+        .row .col {
+            width: 100%;
+        }
+
+        .signup-data {
+            padding: 10px;
+        }
+    }
+
+    .col-one .h-100 {
+        display: none;
+    }
+
+    .signup-data {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+// Medium devices
+@media screen and (min-width: $breakpoint-small) and (max-width: $breakpoint-medium) {
+    .signup {
+        .row .col {
+            width: 100%;
+        }
+
+        .signup-data {
+            padding: 20px;
+        }
+
+        .col-one .h-100 {
+            display: none;
+        }
+
+        .signup-data {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+
+}
+
+// Large devices
+@media screen and (min-width: $breakpoint-medium) and (max-width: $breakpoint-large) {
+    .signup {
+        .row .col {
+            width: 100%;
+        }
+
+        .signup-data {
+            padding: 40px;
+        }
+
+        .col-one .h-100 {
+            display: none;
+        }
+
+        .signup-data {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+// Extra large devices
+@media screen and (min-width: $breakpoint-large) and (max-width: $breakpoint-xlarge) {
+    .signup {
+        height: 100vh;
+
+        .row {
+            .col {
+                width: 50%;
+            }
+
+            .form-email-col {
+                width: 70%;
+            }
+
+            .form-age-col {
+                width: 30%;
+            }
+
+        }
+    }
+}
+
+// Above extra large
+@media screen and (min-width: $breakpoint-xlarge) {
+    .signup {
+        height: 100vh;
+
+        .row {
+            .col {
+                width: 50%;
+            }
+
+            .form-email-col {
+                width: 70%;
+            }
+
+            .form-age-col {
+                width: 30%;
+            }
+
+        }
+    }
+}

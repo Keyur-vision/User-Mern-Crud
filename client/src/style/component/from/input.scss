@@ -1,0 +1,23 @@
+ 
+ .common-input {
+    padding-top: 10px ;
+    padding-bottom: 4px;
+    
+    .form-label {
+        display: block;
+      width: 100%;
+    font-weight: 400;
+    font-family: system-ui;
+     }
+    
+     .form-input {
+        width: 100%;
+        padding: 11px;
+        border-radius: 7px;
+        margin-top: 4px;
+        border: 1px solid;
+        outline: none;
+     }
+ }
+
+ 
