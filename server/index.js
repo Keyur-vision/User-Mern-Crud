@@ -7,9 +7,7 @@ const errorHandler = require("./errorHandling/errorMiddleware.js");
 const limiter = require("./middleware/rateLimiter.js")
 var cors = require('cors')
 
-app.use(cors({
-    origin: "*"
-}));
+app.use(cors({ origin: "*" }));
 
 app.use(errorHandler);
 
@@ -29,7 +27,6 @@ connectMongoDB(URI)
         app.listen(PORT, () => {
             console.log(`Server is listening on port ${PORT}`);
         })
-    })
-    .catch((err) => console.error("Coudn't connect database", err))
+    }).catch((err) => console.error("Coudn't connect database", err))
 
 
