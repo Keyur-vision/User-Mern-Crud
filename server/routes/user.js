@@ -19,8 +19,8 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage }) 
 
 router.get("/", limiter, authorization(), getUser)
-router.get("/lastLoginusers",  getLoginUser)
-router.get('/:id', singleUser);
+router.get("/lastLoginusers", authorization(), getLoginUser)
+router.get('/:id', authorization(), singleUser);
 router.post("/create",  upload.single("profile"),  validate("user"), addUser)
 router.patch("/edit/:id", authorization(), upload.single("profile"), editUser)
 router.delete("/delete/:id", authorization(), deleteUser)
