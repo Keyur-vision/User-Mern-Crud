@@ -8,7 +8,9 @@ const limiter = require("./middleware/rateLimiter.js")
 var cors = require('cors')
 const PORT = process.env.PORT || 7070;
 
-app.use(cors());
+app.use(cors({
+    origin: "*"
+}));
 app.use(errorHandler);
 
 app.use("/img" ,express.static('public'))
