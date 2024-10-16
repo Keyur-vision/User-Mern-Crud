@@ -10,12 +10,13 @@ const PORT = process.env.PORT || 7070;
 
 app.use(cors());
 app.use(errorHandler);
-app.use("/", (req, res) => {
-    res.send("hellow")
-})
+
 app.use("/img" ,express.static('public'))
 app.use(express.json());
 app.use("/api", router);
+app.use("/", (req, res) => {
+    res.send("hellow")
+})
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`)
